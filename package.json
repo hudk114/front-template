@@ -1,42 +1,52 @@
 {
-  "name": "front-template",
-  "description": "template for common front-end",
+  "name": "",
+  "version": "",
+  "description": "",
+  "main": "",
   "scripts": {
     "prettier": "prettier --write ./src/**/*.js",
     "linter": "eslint ./src/**/*.js",
     "format": "prettier-eslint --write ./src/**/*.js",
-    "stylelinter": "stylelint ./src/**/*.css"
+    "stylelinter": "stylelint ./src/**/*.css",
+    "example": "rollup -c && node example/app.js",
+    "build": "cross-env NODE_ENV=production rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hudk114/front-template.git"
+    "url": ""
   },
-  "keywords": [
-    "front-end",
-    "template"
-  ],
+  "keywords": [],
   "precommit": [
     "format",
     "linter",
     "stylelinter"
   ],
   "author": "hudk",
-  "license": "ISC",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/hudk114/front-template/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/hudk114/front-template#readme",
+  "homepage": "",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.1.5",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
+    "express": "^4.16.3",
+    "opn": "^5.3.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.12.1",
     "prettier-eslint": "^8.8.1",
     "prettier-eslint-cli": "^4.7.1",
+    "rollup": "^0.59.1",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-uglify": "^3.0.0",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0"
   }
