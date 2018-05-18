@@ -49,3 +49,10 @@ npm install
 ```
 
 ## test
+
+# TODO
+1. example 针对webpack
+1. test
+
+# others
+感谢[KedAyAyA](https://github.com/KedAyAyA)提出的方案

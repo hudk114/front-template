@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const opn = require('opn');
-const { example } = require('./config');
+const { example } = require('../config');
 
 const app = express();
 
