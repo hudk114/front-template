@@ -1,14 +1,12 @@
 module.exports = {
   dev: {
-    name: ''
+    name: '',
+    port: 3000
   },
   prod: {
     name: ''
   },
   test: {
 
-  },
-  example: {
-    libName: ''
   }
 };

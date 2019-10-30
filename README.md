@@ -27,10 +27,8 @@ npm install
 1. rollup配置
     * **rollup.config.js** output.name
     * **config.js** dev.name prod.name
-1. example配置
-    * **config.js** example.libName
-    * **example/app.js** 端口号
-
+1. example(dev)配置
+    * **/example/index.html** `{name}.js` 打包出的js文件名
 
 ## 针对场景
 针对自己的库开发，轻量级，采用rollup打包，支持es6及stage-0
@@ -41,7 +39,7 @@ npm install
 ├── README.md
 ├── dist                包发布文件夹
 ├── test                test
-├── example             例子，express服务
+├── example             例子，dev开发使用服务
 ├── package-lock.json
 ├── package.json
 └── src
