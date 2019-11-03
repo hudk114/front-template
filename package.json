@@ -5,8 +5,8 @@
   "main": "",
   "scripts": {
     "prettier": "prettier --write ./src/**/*.js",
-    "linter": "eslint ./src/**/*.js",
-    "format": "prettier-eslint --write ./src/**/*.js",
+    "linter": "eslint ./src/**/*.js ./src/*.js ./src/**/*.ts ./src/*.ts",
+    "format": "prettier-eslint --write ./src/**/*.js ./src/*.js ./src/**/*.ts ./src/*.ts",
     "stylelinter": "stylelint ./src/**/*.css",
     "dev": "rollup -w -c rollup.config.dev.js",
     "build": "cross-env NODE_ENV=production rollup -c rollup.config.prod.js",
@@ -20,7 +20,8 @@
   "precommit": [
     "format",
     "linter",
-    "stylelinter"
+    "stylelinter",
+    "test"
   ],
   "author": "hudk",
   "license": "",
